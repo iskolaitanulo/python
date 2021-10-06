@@ -1,0 +1,15 @@
+autó = input('Egy autónév rendel!')
+végsebesség = int(input(' Mennyivel megy ez a ' + autó + '?'))
+ország = input(' Hol készül a ' + autó + '?')
+mondat1 = ország + ' vidékein keresztül a(z) ' +autó+ ', ami ' + str(végsebesség) + 'km/h végsebbeségre képes'
+mondat2 = '{} vidékein készül a(z)  {} , ami {} km/h végsebbeségre képes. ' .format(ország, autó, végsebesség,)
+mondat3 = '{0} vidékein készül a(z) {1} , ami {2} km/h végsebességre képes.'.format(ország, autó, végsebesség)
+mondat3b = '{0} vidékein készül a(z) {2} , ami {1} km/h végsebességre képes.'.format(ország, végsebesség, autó)
+mondat4 = '{o} vidékein készül a(z) {a} , ami {v} km/h végsebességre képes.'.format(o=ország, a=autó, v=végsebesség)
+mondat5=f'{ország} vidékein készül a(z)  {autó} , ami {végsebesség} km/h végsebbeségre képes. ' 
+print(mondat1)
+print(mondat2)
+print(mondat3)
+print(mondat3b)
+print(mondat4) 
+print(mondat5)
