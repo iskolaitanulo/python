@@ -1,0 +1,6 @@
+wr = open("solya.txt","w")
+wr.write("solya_jozsef")
+wr.close()
+wr = open("solya.txt","a")
+wr.write("\n2021.10.20.")
+wr.close()
