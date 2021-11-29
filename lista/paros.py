@@ -1,0 +1,23 @@
+szam = int(input("irja be szamot"))
+if szam == 0:
+    print("ez a szám páros")
+elif szam == 1:
+    print("ez a szám páratlan")
+elif szam == 3:
+    print("ez a szám páratlan")
+elif szam == 5:
+    print("ez a szám páratlan")
+elif szam == 7:
+    print("ez a szám páratlan")
+elif szam == 9:
+    print("ez a szám páratlan")
+elif szam == 2:
+    print("ez a szám páros")
+elif szam == 4:
+    print("ez a szám páros")
+elif szam == 6:
+    print("ez a szám páros")
+elif szam == 8:
+    print("ez a szám páros")
+elif szam == 10:
+    print("ez a szám páros")
