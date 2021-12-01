@@ -1,8 +1,11 @@
 import random
-
+"""
 nev = input("Kérem adja meg a nevét")
 szam1 = float(input("adjon meg egy számot"))
 szam2 = random.randrange(10 , 50)
+while szam2%2 == 1:
+    szam2 = random.randrange(10 , 50)
+
 SZAM3 = 5
 #halmaz
 szamok2 = {23}
@@ -20,6 +23,7 @@ if szam1 % 2 == 0:
 else:
     print("Páratlan")
 print(szam1, szam2)
+
 szam4 = str(szam1)
 wr = open("jozsi.txt","w")
 wr.write(nev)
@@ -30,3 +34,26 @@ lista = [1,2,3,4,5,"abc","def"]
 with open("jozsii.txt",'w') as file:
     for item in lista:
         file.write("%s\n" % item) 
+
+gyomulcsok = ["eper","barack","ananász"] 
+print(f'a gyomulcsok lista a következőket tartalmazza:{gyomulcsok}')
+for (i,y) in enumerate (gyomulcsok):
+    print(i,y)
+
+print("".join(gyomulcsok))
+"""
+
+for téglalap in range (3):
+    for sor in range (4):
+        for oszlop in range(5):
+            print('o', end ='')
+        print('')
+    print('')
+
+
+
+
+
+
+
+
