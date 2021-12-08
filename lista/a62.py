@@ -1,7 +1,7 @@
 class Needs():
     pass
 need = []
-re = open("igeny.txt","r")
+re = open("H:\\pyhton\\lista\\igeny.txt","r")
 line = re.readline()
 line = re.readline()
 rn = int(re.readline())
@@ -11,6 +11,7 @@ for i in range(rn):
     datas = line.split()
     need.append(Needs())
     need[i].h = int(datas[0])
+    print(datas[0])
     need[i].min = int(datas[1])
     need[i].sec = int(datas[2])
     need[i].team = int(datas[3])
@@ -18,4 +19,9 @@ for i in range(rn):
     need[i].stop = int(datas[5])
     
 re.close()
-    
+
+
+valami = open("elsosor.txt","w")
+for i in range(len(datas)):    
+    valami.write(str(i))
+valami.close()
