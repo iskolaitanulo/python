@@ -24,6 +24,11 @@ else:
     print("Páratlan")
 print(szam1, szam2)
 
+
+while szam2 %2 == 1:
+    szam2 = random.randrange(10 , 50)
+
+
 szam4 = str(szam1)
 wr = open("jozsi.txt","w")
 wr.write(nev)
@@ -43,7 +48,7 @@ for (i,y) in enumerate (gyomulcsok):
 print("".join(gyomulcsok))
 """
 
-for téglalap in range (3):
+for téglalap in range (3):                                                       
     for sor in range (4):
         for oszlop in range(5):
             print('o', end ='')
