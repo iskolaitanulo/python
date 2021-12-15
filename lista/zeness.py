@@ -30,6 +30,7 @@ def teljes_hossz(zenek):
     with open("02_hossz.txt", "w", encoding="utf-8") as file:   # Az eredményt kiírjuk a kimeneti fájlba
         file.write(f"A lejatszasi lista hossza: {hossz_perc} perc, {hossz_masodperc} masodperc\n")
 
+
 if _name_ == '_main_':
     lejatszasi_lista = beolvas()
 
