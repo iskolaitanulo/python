@@ -19,13 +19,15 @@ print(f"AS márciusi kitermeles fa átlaga: {átlag}")
 wr.write(f"/nA marciusi kitermelt fa átlaga:{átlag}")
 legkisebb = min(fa)
 legnagyobb = max(fa)
-"""
-for i in fa
-    if i < legkisebb
+
+for i in fa:
+    if i < legkisebb:
         legkisebb = i
-    elif i > legnagyobb
+        x = fa.index(i)+1
+    elif i > legnagyobb:
         legnagyobb = i 
-"""
+        x = fa.index(i)+1
+
 print(f"a legkisebb{legkisebb} és legnagyobb {legnagyobb}")
 wr.write(f"a legkisebb{legkisebb} és legnagyobb {legnagyobb}")
 
