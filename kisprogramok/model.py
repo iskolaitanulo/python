@@ -6,8 +6,9 @@ if kor < 20:
 elif kor == 20:
     print('alkalmazhato')
 else:
-    print('vén')
+    print('ven')
 if magassag >= 170 and magassag <= 175:
     print('naon jo')
 else:
     print('naon nem jo')
+#Józsi copyright
