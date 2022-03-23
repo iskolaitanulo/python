@@ -1,0 +1,26 @@
+body{
+    background-color: orange;
+}
+div{
+    width: 960px;
+    background-color: cornsilk;
+    text-align: center;
+}
+
+h2{
+    text-align: justify;
+}
+hr{
+   color: orange;
+}
+li{
+    text-align: justify;
+}
+footer{
+    text-align: center;
+}
+img{
+    float: right;
+    padding: 0 20 0px 0px;
+    
+}
