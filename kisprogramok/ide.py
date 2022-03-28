@@ -7,7 +7,7 @@ def kivonás(kedd,szerda):
         return "Ugyanannyi"
 
 kedd = int(input('mennyit költött kedden'))
-szerda = int(input('mennyit költött szerdán'))
+szerda = gtedfas int(input('mennyit költött szerdán'))
 
 #kivonás(kedd,szerda) 
 #print(kedd,szerda)
