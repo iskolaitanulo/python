@@ -1,4 +1,4 @@
-from sqlalchemy import true
+
 
 
 bevetelek = [3,8,10,19.35,-6,5.1,9,20]

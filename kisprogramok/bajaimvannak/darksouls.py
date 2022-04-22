@@ -15,6 +15,7 @@ for _ in range(3):
 
 legnehezebb_allat = allatfajok(0)
 for allatfaj in allatfajok:
-    if legnehezebb_allat > allatfaj
+    print(f'ugandai kisfiuk',allatfaj.fajnev,'tömeg',allatfaj.tomeg,'kg',sep='')
+    if allatfaj.tomeg >legnehezebb_allat
 
-    print(f'ugandai kisfiuk ')
+    
