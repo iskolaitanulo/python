@@ -1,0 +1,27 @@
+
+Height=float(input("Addja meg a magasságát cm- ben: "))
+Weight=float(input("Addja meg a súlyát kg- ban: "))
+
+def szamol(Height, Weight):
+    Height = Height/100
+    BMI=Weight/(Height*Height)
+    return BMI
+    
+def bmi():
+    BMI = szamol(Height, Weight)
+    if(BMI>0):
+        if(BMI<=16):
+            return "Ön súlyosan alultáplált"
+        elif(BMI<=18.5):
+            return "Ön alultáplált"
+        elif(BMI<=25):
+            return "Ön egészséges"
+        elif(BMI<=30):
+            return "Ön túlsúlyos"
+        else: 
+            return "Ön súlyosan túlsúlyos"
+    else:
+        return "érvényes adatok megadását kérem"
+
+print(bmi())
+print("A maga testsúly indexe: ", szamol(Height, Weight))

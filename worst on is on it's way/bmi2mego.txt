@@ -1,0 +1,67 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+Height=float(input("Addja meg a magasságát cm- ben: "))
+Weight=float(input("Addja meg a súlyát kg- ban: "))
+
+def szamol(Height, Weight):
+    Height = Height/100
+    BMI=Weight/(Height*Height)
+    return BMI
+    
+def bmi():
+    BMI = szamol(Height, Weight)
+    if(BMI>0):
+        if(BMI<=16):
+            return "Ön súlyosan alultáplált"
+        elif(BMI<=18.5):
+            return "Ön alultáplált"
+        elif(BMI<=25):
+            return "Ön egészséges"
+        elif(BMI<=30):
+            return "Ön túlsúlyos"
+        else: 
+            return "Ön súlyosan túlsúlyos"
+    else:
+        return "érvényes adatok megadását kérem"
+
+print(bmi())
+print("A maga testsúly indexe: ", szamol(Height, Weight))
+
+-------------------
+
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+
+class Ember:
+    def __init__(self, nev, magassag, tomeg, BMI = 0):
+        self.nev = nev
+        self.magassag = magassag
+        self.tomeg = tomeg
+        
+    def szamol(self, magassag, tomeg):
+        magassag = self.magassag/100
+        self.BMI= tomeg/(magassag**2)
+        return self.BMI
+
+    def bmi(self):
+        self.BMI = szamol(self.magassag, self.tomeg)
+        if(self.BMI>0):
+            if(self.BMI<=16):
+                return "Ön súlyosan alultáplált"
+            elif(self.BMI<=18.5):
+                return "Ön alultáplált"
+            elif(self.BMI<=25):
+                return "Ön egészséges"
+            elif(self.BMI<=30):
+                return "Ön túlsúlyos"
+            else: 
+                return "Ön súlyosan túlsúlyos"
+        else:
+            return "érvényes adatok megadását kérem"
+Name = input("Adja meg a nevét: ")
+Height=float(input("Addja meg a magasságát cm- ben: "))
+Weight=float(input("Addja meg a súlyát kg- ban: "))
+szemely = Ember(Name, Height, Weight)
+
+print(szemely.bmi())
+print("A maga testsúly indexe: ", szemely.szamol(Height, Weight))
